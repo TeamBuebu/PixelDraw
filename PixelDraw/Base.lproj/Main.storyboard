@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pXp-1L-N2D">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Pixel Draw-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="PixelDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUX-SD-iXN" customClass="ColorControlView" customModule="PixelDraw" customModuleProvider="target">
+                                <rect key="frame" x="20" y="476" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="24Q-xa-0Sd"/>
+                                    <constraint firstAttribute="height" constant="40" id="qqr-f7-K9S"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-gF-orW" customClass="ColorControlView" customModule="PixelDraw" customModuleProvider="target">
+                                <rect key="frame" x="68" y="476" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G9V-j9-bdA"/>
+                                    <constraint firstAttribute="width" constant="40" id="xKg-ms-jpv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv2-W0-p3f" customClass="ColorControlView" customModule="PixelDraw" customModuleProvider="target">
+                                <rect key="frame" x="116" y="476" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3no-Cp-nCa"/>
+                                    <constraint firstAttribute="width" constant="40" id="uyj-qh-rxt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-FO-5by" customClass="ColorControlView" customModule="PixelDraw" customModuleProvider="target">
+                                <rect key="frame" x="164" y="476" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="H9f-m2-uwR"/>
+                                    <constraint firstAttribute="width" constant="40" id="JOp-jV-7mp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85z-D2-JIA" customClass="ColorControlView" customModule="PixelDraw" customModuleProvider="target">
+                                <rect key="frame" x="212" y="476" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kgs-ZZ-zDP"/>
+                                    <constraint firstAttribute="width" constant="40" id="r6T-Kc-Qyt"/>
+                                </constraints>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbm-dD-mgz" customClass="TouchTrackerView" customModule="PixelDraw" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hbm-dD-mgz" secondAttribute="height" multiplier="1:1" id="bcN-tf-wVq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6fP-gF-orW" firstAttribute="leading" secondItem="sUX-SD-iXN" secondAttribute="trailing" constant="8" id="0Fi-ap-tn2"/>
+                            <constraint firstItem="C9E-FO-5by" firstAttribute="leading" secondItem="dv2-W0-p3f" secondAttribute="trailing" constant="8" id="32x-Ql-4jr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="85z-D2-JIA" secondAttribute="bottom" constant="20" id="89X-qb-OQx"/>
+                            <constraint firstItem="hbm-dD-mgz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EKQ-pB-mjt"/>
+                            <constraint firstItem="85z-D2-JIA" firstAttribute="top" secondItem="hbm-dD-mgz" secondAttribute="bottom" constant="6" id="H2W-55-yZO"/>
+                            <constraint firstItem="dv2-W0-p3f" firstAttribute="leading" secondItem="6fP-gF-orW" secondAttribute="trailing" constant="8" id="H7U-oA-uJC"/>
+                            <constraint firstItem="C9E-FO-5by" firstAttribute="leading" secondItem="dv2-W0-p3f" secondAttribute="trailing" constant="8" id="HjD-7U-Y5w"/>
+                            <constraint firstItem="85z-D2-JIA" firstAttribute="leading" secondItem="C9E-FO-5by" secondAttribute="trailing" constant="8" id="MT3-TA-bO1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6fP-gF-orW" secondAttribute="bottom" constant="20" id="My3-M4-cPc"/>
+                            <constraint firstItem="dv2-W0-p3f" firstAttribute="leading" secondItem="6fP-gF-orW" secondAttribute="trailing" constant="8" id="NAL-kH-ehg"/>
+                            <constraint firstAttribute="trailing" secondItem="hbm-dD-mgz" secondAttribute="trailing" id="VCR-7m-4wm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dv2-W0-p3f" secondAttribute="bottom" constant="20" id="W6F-ng-NvR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sUX-SD-iXN" secondAttribute="bottom" constant="20" id="ZUI-h4-rNJ"/>
+                            <constraint firstItem="85z-D2-JIA" firstAttribute="leading" secondItem="C9E-FO-5by" secondAttribute="trailing" constant="8" id="bh4-l4-G6d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C9E-FO-5by" secondAttribute="bottom" constant="20" id="chc-bZ-DxI"/>
+                            <constraint firstItem="6fP-gF-orW" firstAttribute="leading" secondItem="sUX-SD-iXN" secondAttribute="trailing" constant="8" id="f0N-vY-0cb"/>
+                            <constraint firstItem="hbm-dD-mgz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qdn-Wj-3m5"/>
+                            <constraint firstItem="sUX-SD-iXN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="yAW-m1-Ewm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H2W-55-yZO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Pixel Draw" id="hbt-Fb-I7V">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="2Ct-gY-Xz3">
+                            <connections>
+                                <action selector="clearGrid:" destination="BYZ-38-t0r" id="sgw-wU-H8n"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log" id="244-6f-P5c">
+                            <connections>
+                                <action selector="logResult:" destination="BYZ-38-t0r" id="c7a-LW-psS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="color1ControlView" destination="sUX-SD-iXN" id="L5g-ko-bOM"/>
+                        <outlet property="color2ControlView" destination="6fP-gF-orW" id="Oid-bY-kkP"/>
+                        <outlet property="color3ControlView" destination="dv2-W0-p3f" id="CG6-iV-SbY"/>
+                        <outlet property="color4ControlView" destination="C9E-FO-5by" id="obM-Pc-DVq"/>
+                        <outlet property="color5ControlView" destination="85z-D2-JIA" id="luW-Qa-JL4"/>
+                        <outlet property="touchView" destination="hbm-dD-mgz" id="hZd-be-2te"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="-59"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TnU-nO-tPo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXp-1L-N2D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="78x-2h-DTC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.047058823529411764" green="0.30980392156862746" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7aa-dx-tiO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgI-Ud-seY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-59"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.98431372549999996" green="0.63921568630000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+</document>
